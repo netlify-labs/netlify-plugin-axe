@@ -9,7 +9,7 @@ const pluginCore = require('./pluginCore');
 
 module.exports = {
     async onPostBuild({
-      inputs: { checkPaths, ignoreDirectories, resultMode, debugMode },
+      inputs: { checkPaths, ignoreDirectories, resultMode, timeout, debugMode },
       constants: { PUBLISH_DIR },
       utils: { build }
     }) {
@@ -24,6 +24,7 @@ module.exports = {
       const results = await pluginCore.runPa11y({
         htmlFilePaths,
         build,
+        timeout,
         debugMode
       });
 

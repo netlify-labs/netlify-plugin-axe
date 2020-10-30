@@ -7,6 +7,8 @@ inputs:
     required: false
   - name: resultMode
     default: error
+  - name: timeout
+    default: 30000
   - name: debugMode
     default: false
   - name: testMode
