@@ -48,6 +48,8 @@ package = "netlify-plugin-a11y"
 
   # resultMode = "warn" # is "error" by default
 
+  # timeout = 60000 # in milliseconds; is 30000 by default
+
   # # Developer only
   # debugMode = true # extra logging for plugin developers
 ```
